@@ -18,7 +18,7 @@ func GetHomeDir() string {
 func IsDir(fileAddr string) bool {
 	s, err := os.Stat(fileAddr)
 	if err != nil {
-		panic(err)
+		return false
 	}
 	return s.IsDir()
 }
