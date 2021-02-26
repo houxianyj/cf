@@ -31,7 +31,7 @@ func ReadAll(filePath string) []byte {
 type File struct {
 }
 
-func (f *File) readAll(file string) []byte {
+func (f *File) ReadAll(file string) []byte {
 	return ReadAll(file)
 }
 
